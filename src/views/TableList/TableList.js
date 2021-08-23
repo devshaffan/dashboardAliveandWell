@@ -56,20 +56,15 @@ export default function TableList() {
           <CardBody>
             <Table
               tableHeaderColor="primary"
-              tableHead={["Name", "Country", "City", "Salary"]}
+              tableHead={["#", "Patient Name", "Email", "View & Edit", "Delete"]}
               tableData={[
-                ["Dakota Rice", "Niger", "Oud-Turnhout", "$36,738"],
-                ["Minerva Hooper", "Curaçao", "Sinaai-Waas", "$23,789"],
-                ["Sage Rodriguez", "Netherlands", "Baileux", "$56,142"],
-                ["Philip Chaney", "Korea, South", "Overland Park", "$38,735"],
-                ["Doris Greene", "Malawi", "Feldkirchen in Kärnten", "$63,542"],
-                ["Mason Porter", "Chile", "Gloucester", "$78,615"],
+                ["1", "Niger", "niger@email.com", "btn", "btn"]
               ]}
             />
           </CardBody>
         </Card>
       </GridItem>
-      <GridItem xs={12} sm={12} md={12}>
+      {/* <GridItem xs={12} sm={12} md={12}>
         <Card plain>
           <CardHeader plain color="primary">
             <h4 className={classes.cardTitleWhite}>
@@ -106,7 +101,7 @@ export default function TableList() {
             />
           </CardBody>
         </Card>
-      </GridItem>
+      </GridItem> */}
     </GridContainer>
   );
 }

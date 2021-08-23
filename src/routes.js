@@ -52,13 +52,13 @@ const ifAdmin = () => {
       layout: "/admin",
     },
   ];
-  const User = authService.getCurrentUser()
-  if (!User) {
-    return null;
-  }
-  else if (!User.roles.includes('admin')) {
-    return dashboardRoutes.splice(0, 1)
-  }
+  // const User = authService.getCurrentUser()
+  // if (!User) {
+  //   return null;
+  // }
+  // else if (!User.roles.includes('admin')) {
+  //   return dashboardRoutes.splice(0, 1)
+  // }
   return dashboardRoutes
 }
 
